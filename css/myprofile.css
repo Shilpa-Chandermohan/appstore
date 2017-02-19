@@ -1,0 +1,423 @@
+/************************************************************************************
+STRUCTURE
+*************************************************************************************/
+#wrapper {
+	max-width: 100%;
+	max-height:100%;
+	
+	margin:0%;
+	/*background-image: url('../img/info_bg.png');*/
+}
+#title-font
+{
+	color:
+	font-size:20px;
+}
+#app-font
+{
+	font-size:16px;
+}
+
+#screen_title_font{
+	font-size:25px;
+	
+}
+/************************************************************************************
+HEADER
+*************************************************************************************/
+header{
+	width: 100%;
+	height:5%;
+	background-size:100% 100%;
+	
+}
+#screen-title{
+	width:49%;
+	height:100%;
+	font-size:25px;
+	margin-left:1%;
+	margin-top:0%;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:orange;
+	float:left;
+	
+}
+
+#profile-info{
+	width:49%;
+	height:100%;
+	float:right;
+	margin-right:1%;
+}
+
+#profile-name{
+	width:88%;
+	height:98%;
+	margin-right:2%;
+	margin-top:2%;
+	float:left;
+	text-align:right;
+	
+}
+
+#profile-pict-cont{
+	width:10%;
+	height:100%;
+	float:left;
+	background-size:100% 100%;
+	
+}
+
+#profile-pict{
+	width:90%;
+	height:90%;
+	margin:5%;
+	background-size:100% 100%;
+	-moz-border-radius:10px;  /* for Firefox */
+	-webkit-border-radius:10px; /* for Webkit-Browsers */
+	border-radius:10px; /* regular */
+}
+
+/************************************************************************************
+BODY
+Transaction Summary
+*************************************************************************************/
+#transaction-summary{
+	width:100%;
+	height:18%;
+	margin-top:1%;
+	margin-bottom:1%;
+	float:left;
+	background-size:100% 100%;
+	background-color:#171616;
+	-moz-border-radius:10px;  /* for Firefox */
+	-webkit-border-radius:10px; /* for Webkit-Browsers */
+	border-radius:10px; /* regular */
+}
+#transaction-title  {
+	margin:1%;
+	margin-bottom:2%;
+	font-size:20px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	
+	
+}
+#transaction-info-title  {
+	margin-left:1%;
+	font-size:16px;
+	font-family: Arial, Helvetica, sans-serif;
+	
+	
+}
+#transaction-info-data{
+	margin-left:1%;
+	font-size:16px;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+
+
+/************************************************************************************
+BODY
+Installation Summary
+*************************************************************************************/
+#installation-title {
+    width:99%;
+	height:3%;
+	font-size:20px;
+	margin-left:1%;
+	margin-bottom:0%;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	float:left;
+
+}
+
+#installation-summary{
+	width:100%;
+	height:70%;
+	float:left;
+	overflow-y:auto;
+	background-size:100% 100%;
+	background-color:#171616;
+	-moz-border-radius:10px;  /* for Firefox */
+	-webkit-border-radius:10px; /* for Webkit-Browsers */
+	border-radius:10px; /* regular */
+	
+	
+}
+
+#row{
+	width:98%;
+	height:22%;
+	margin:1%;
+	background-color:#585858;
+	border-radius:10px; 
+}
+#row1{
+	width:98%;
+	height:22%;
+	margin:1%;
+	background-color:#c0c0c0;
+	border-radius:10px; 
+}
+#col{
+	width:50%;
+	height:100%;
+	float:left;
+}
+.app_img{
+	width:30%;
+	height:100%;
+	float:left;
+	
+}
+.app_data{
+	width:70%;
+	height:100%;
+	float:left;
+	
+}
+.app_name{
+	color:orange;
+	font-weight:bold;
+}
+.app_font{
+	font-size:18px;
+}
+.app_name1,.app_rate,.app_date{
+	width:90%;
+	height:33%;
+	margin-left:10%;
+}
+
+/******************************************************************************************************
+							MEDIA QUERIES
+*********************************************************************************************************/
+
+@media only all and (max-width: 800px) and (max-height: 600px) {
+.app_font{
+	font-size:14px;
+}
+#screen-title{
+	font-size:18px;
+}
+#transaction-title{
+	font-size:15px;
+}
+#transaction-info-title{
+font-size:14px;
+}
+#transaction-info-data
+{
+font-size:14px;
+}
+#installation-title{
+font-size:18px;
+
+}
+}
+@media only all and (max-width: 1280px) and (max-height: 1024px) {
+.app_font{
+	font-size:15px;
+}
+#screen-title{
+	font-size:19px;
+}
+#transaction-title{
+	font-size:16px;
+}
+#transaction-info-title{
+font-size:15px;
+}
+#transaction-info-data
+{
+font-size:15px;
+}
+#installation-title{
+font-size:16px;
+
+}
+}
+@media only all and (max-width: 1152px) and (max-height: 864px) {
+.app_font{
+	font-size:15px;
+}
+#screen-title{
+	font-size:19px;
+}
+#transaction-title{
+	font-size:16px;
+}
+#transaction-info-title{
+font-size:15px;
+}
+#transaction-info-data
+{
+font-size:15px;
+}
+#installation-title{
+font-size:16px;
+
+}
+}
+@media only all and (max-width: 1024px) and (max-height: 768px) {
+.app_font{
+	font-size:14px;
+}
+#screen-title{
+	font-size:18px;
+}
+#transaction-title{
+	font-size:15px;
+}
+#transaction-info-title{
+font-size:14px;
+}
+#transaction-info-data
+{
+font-size:14px;
+}
+#installation-title{
+font-size:15px;
+
+}
+}
+
+@media only all and (max-width: 980px) and (max-height: 496px) {
+.app_font{
+	font-size:15px;
+}
+#screen-title{
+	font-size:19px;
+}
+#transaction-title{
+	font-size:16px;
+}
+#transaction-info-title{
+font-size:15px;
+}
+#transaction-info-data
+{
+font-size:15px;
+}
+#installation-title{
+font-size:19px;
+
+}
+}
+@media only all and (max-width: 800px) and (max-height: 480px) {
+.app_font{
+	font-size:16px;
+}
+#screen-title{
+	font-size:18px;
+}
+#transaction-title{
+	font-size:16px;
+}
+#transaction-info-title{
+font-size:16px;
+}
+#transaction-info-data
+{
+font-size:16px;
+}
+#installation-title{
+font-size:18px;
+
+}
+}
+
+@media only all and (max-width: 480px) and (max-height: 320px) {
+.app_font{
+	font-size:12px;
+}
+#screen-title{
+	font-size:12px;
+}
+#transaction-title{
+	font-size:10px;
+}
+#transaction-info-title{
+font-size:10px;
+}
+#transaction-info-data
+{
+font-size:12px;
+}
+#installation-title{
+font-size:12px;
+
+}
+#profile-pict{
+	width:10%;
+}
+#profile-name{
+font-size:20%;
+
+}
+}
+@media only all and (max-width:320)
+{
+.app_font{
+	font-size:8px;
+}
+#screen-title{
+	font-size:12px;
+}
+#transaction-title{
+	font-size:10px;
+}
+#transaction-info-title{
+font-size:08px;
+}
+#transaction-info-data
+{
+font-size:08px;
+}
+#installation-title{
+font-size:10px;
+
+}
+#profile-pict{
+	width:9%;
+}
+#profile-name{
+font-size:40%;
+
+}
+@media only all and (max-width: 320px) and (max-height: 240px) {
+.app_font{
+	font-size:04px;
+}
+#screen-title{
+	font-size:10px;
+}
+#transaction-title{
+	font-size:08px;
+}
+#transaction-info-title{
+font-size:04px;
+}
+#transaction-info-data
+{
+font-size:04px;
+}
+#installation-title{
+font-size:08px;
+
+}
+#profile-pict{
+	width:6%;
+}
+#profile-name{
+font-size:40%;
+
+}
+
+}
+

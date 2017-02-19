@@ -1,0 +1,187 @@
+<html>
+	<head>
+		<title>Appstore HTML5 Application</title>
+		<!-- base css -->
+		<link href="css/base.css" rel="stylesheet" type="text/css">
+		<link href="css/popUpNew.css" rel="stylesheet" type="text/css">
+		<!-- main css -->
+		<link href="css/info.css" rel="stylesheet" type="text/css">
+        <script src="js/jquery-1.9.1.js"></script>
+        <script src="js/keycode.js" type="text/javascript"></script>
+        <script src="js/animation.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/userRatings.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/info.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/info_data.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/button_handling.js"></script>
+		<script src="js/infoClass.js"></script>
+		<script src="js/http_request.js"></script>
+		<script src="js/popUpinfo.js"></script>
+		<script src="js/logout_popup.js"></script>
+		  <script type="text/javascript" src="js/navigation.js"></script>
+		  <script src="js/myAppStore.js"></script>
+		<script type="text/javascript">
+            $(document).ready(function() {
+            	$("#desc_button0").click(function(){
+					$("#wrapper").css("opacity","0.3");
+					showBuyPopup();
+					showErrorPopup();
+				});
+			
+				/*var appInfo = JSON.parse(sessionStorage.getItem("appInfo"));
+				setInfoinfo(appInfo);*/
+
+			});
+		</script>
+		<script type="text/javascript">
+            
+				//_(" ").setFocusId("buy_1");
+		
+		_(" ").KeyDown();
+           
+		</script>
+	</head>
+
+	<body>
+	<style>
+            .cursor {
+            height: 40px;
+			width: 160px;
+			-webkit-transition: all 0.5s cubic-bezier(.43,.62,.25,1.16);
+			border: 3px solid #FF9900;
+			-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+			box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+			left:210px;
+			top:650px;
+			position: absolute;
+			z-index:999;
+            }
+
+    
+        </style>
+		<img id="loading_animation" class="" src="img/loading_animation.png">
+        <div class='cursor' id="cursor"></div>
+		<div id="wrapper">
+			<section id="left_cont">
+				<section id="app_img">
+					<img id="app_thumb_img" src="http://upload.wikimedia.org/wikipedia/commons/c/ce/Transparent.gif"/>
+				</section>	
+				<section id="widget_buyinfo" class="app_buy" widgetBottom="widget_lock" >
+									<button id="buyinfo_1" class="fontbutton button" onclick="showBuyPopup();">Buy </button>
+									<button id="buyinfo_2" class="fontbutton button" onclick="infoRegister();" isTrue="false">Register</button>
+									<button id="buyinfo_3" class="fontbutton button" isFocused="true" childBegin="true" childEnd="false" childTop="false" childBottom="true"  childLeft="false" childRight="false" onclick="openApp();">Open </button>
+									<button id="buyinfo_4" class="fontbutton button"  onclick="infoUnRegister();" isFocused="true"  childBegin="true" childEnd="true" childTop="false" childBottom="true"  childLeft="false" childRight="false">Uninstall</button>
+									
+				</section>
+				<section id="widget_lock" widgetTop="widget_buyinfo" widgetBottom="widget_review" class="lock_app">
+				<button id="lock_1" class="fontbutton button lock">Lock </button>
+				</section>
+				<section id="app_detail" class="fontappdetail">
+					<div id="row1">
+						<div id="app_date">Aug 20 2012</div>
+						<div id="app_size">0.7MB</div>
+					</div>
+					<div id="row2">
+						<div id="app_downloads">44</div><div id="app_downloads">+downloads</div>
+						<div id="app_version">0.0</div><div id="app_version">ver</div>
+					</div>
+				</section>
+					
+				<section id="widget_description" widgetBottom="widget_review" widgetTop="widget_lock">
+					<section class="app_descrpition focus" id="description_1" isFocused="true">
+					<div id="app_lbl" class="fontlabel">Description:</div>				
+						<div id="app_desc_value" class="fontnormal " style="overflow:hidden;"></div> 
+				</section>
+				</section>
+				<section id="widget_review" widgetTop="widget_lock" class="fontbutton app_rt_btn" widgetRight="widget_button">
+					<button id="review_1"  class="fontbutton button review_btn" isFocused="true" childBegin="true" childEnd="false" childTop="false" childBottom="true"  childLeft="false" childRight="false">Review</button>
+					<button id="review_2"  class="fontbutton button tweets_btn" isFocused="true" childBegin="true" childEnd="true" childTop="false" childBottom="false"  childLeft="true" childRight="true">Tweets</button>
+				</section>
+				
+			</section>
+
+			<section id="right_cont">
+				<section id="top_cont">
+					<div id="app_title" class="fonttitle">
+						Cool Bird
+					</div>
+				</section>
+				
+				<section id="middle_cont">
+					
+					
+						
+							<div id="featureCarousel">
+								<div class="feature">
+									<img  id="img1" src="img/app_01.jpg" alt="Image Caption" > 
+									
+								</div>
+								<div class="feature">
+									 <img  id="img2" src="img/app_02.jpg" alt="Image Caption" > 
+									 
+								</div>
+								<div class="feature">
+									 <img  id="img3"  src="img/app_03.jpg" alt="Image Caption" > 
+									 
+								</div>
+					</div>
+				</section>
+				
+				<section id="bottom_cont">
+						
+						<section id="sponsored_thumb">
+								<img id="thumb_img" src="http://upload.wikimedia.org/wikipedia/commons/c/ce/Transparent.gif"/>
+								<div id="thumb_desc">
+									<div id="app_name" class="fontappdetail"> </div>
+										<div id="rating" >
+											<img id="sstar1" class="star" src="img/star_gray.png"/>
+											<img id="sstar2" class="star" src="img/star_gray.png"/>
+											<img  id="sstar3" class="star" src="img/star_gray.png"/>
+											<img id="sstar4" class="star" src="img/star_gray.png"/>
+											<img  id="sstar5" class="star" src="img/star_gray.png"/>
+											
+										</div>
+										<div id="app_price" class="fontappdetail"></div>
+								</div>
+								
+								
+						</section>
+						<section id="sponsored_desc" class="sponsored_desc">
+							<div id="widget_app" class="fontnormal descrpition" widgetLeft="widget_review" widgetBottom="widget_button">
+								<div id="app_1" isFocused="true" childBegin="true" childEnd="true" childTop="false" childBottom="false"  childLeft="false" childRight="false"style="
+			overflow:hidden;"> 
+							</div>
+							</div>
+							<div id="widget_button" class="spon_btn"  widgetLeft="widget_review">
+								<button id="button_1" class="fontbutton button sponsored_btn"> Info</button>
+								<div id="sponsored_lbl" class="fontlabel"> Featured App</div>
+							</div>
+						</section>
+				
+
+				</section>
+			</section>
+		</div>
+		<div id="logoutpopUpDiv" >
+				<div id="l_message">
+					<p id="logoutmsg" class="font_normal">
+					
+					</p>
+				</div>
+				<div id="l_buttons">
+					<button id="l_cancel" class="button font_h_button">
+						CANCEL
+					</button>
+				</div>
+			</div>
+			<!-- Error PopUp for pay pal-->
+				<div id="closePop">
+					<div class="close_cont">
+						<div id="eMessage" class="font_normal"></div>
+						<button id="gCancel" class="button font_h_button" onclick="removeErrorPopUp();">Cancel</button>
+					</div>
+				</div>
+			<script>
+	_(" ").setCursorPosition(" ","buyinfo_1");
+	</script>
+	</body>
+</html>

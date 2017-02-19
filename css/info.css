@@ -1,0 +1,665 @@
+#wrapper {
+	font-family: Verdana;
+	width: 100%;
+	height: 100%;
+	
+}
+/************************************************************************************************************
+ Font styling
+ *****************************************************************************************************/
+.fonttitle {
+	font-size: 25px;
+	color:white;
+}
+.fontbutton {
+	font-size: 18px;
+	
+}
+
+.fontnormal {
+	font-size: 15px;
+	color:white;
+}
+
+.fontlabel {
+	font-size: 18px;
+	color:white;
+}
+.fontappdetail {
+	font-size: 13px;
+	
+}
+
+/************************************************************************************************************
+ Left Part
+ *****************************************************************************************************/
+
+#left_cont {
+	width: 21%;
+	height: 98%;
+	background-color: transperent;
+	float: left;
+	margin-right: 2%;
+	margin-left: 1%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	
+	
+}
+
+#app_img {
+	width: 100%;
+	height: 27%;
+	margin-bottom: 5%;
+}
+#app_thumb_img {
+	width: 100%;
+	height: 100%;
+}
+.app_buy {
+	width: 100%;
+	height: 5%;
+	margin-bottom: 2%;
+}
+#buyinfo_1{
+	background: url('../img/btn01_nor.png') no-repeat;
+	background-size: 100% 100%;
+	margin-top: 0%;
+	margin-bottom: 0%;
+	height: 100%;
+	width: 100%;
+	padding: 0%;
+	text-align: center;
+	/*visibility: visible;*/
+	display:block;
+}
+#buyinfo_2{
+	background: url('../img/btn01_nor.png') no-repeat;
+	background-size: 100% 100%;
+	margin-top: 0%;
+	margin-bottom: 0%;
+	height: 100%;
+	width: 100%;
+	padding: 0%;
+	text-align: center;
+	/*visibility: visible;*/
+	display:none;
+}
+#buyinfo_3 {
+	background: url('../img/btn01_nor.png') no-repeat;
+	background-size: 100% 100%;
+	margin-top: 0%;
+	height: 100%;
+	width: 46%;
+	padding: 0;
+	float:left;
+	text-align: center;
+	/*visibility: hidden;*/
+	display:none;
+}
+#buyinfo_4 {
+	background: url('../img/btn01_nor.png') no-repeat;
+	background-size: 100% 100%;
+	margin-top: 0%;
+	margin-left:8%;
+	float:left;
+	height: 100%;
+	width: 46%;
+	padding: 0%;
+	text-align: center;
+	}
+.lock_app
+{
+	width: 100%;
+	height: 5%;
+	margin-bottom: 3%;
+}
+.lock{
+	background: url('../img/btn01_nor.png') no-repeat;
+	background-size: 100% 100%;
+	margin-top: 0%;
+	height: 100%;
+	width: 100%;
+	padding: 0%;
+	text-align: center;
+	visibility: visible;
+	disabled:disabled;
+}
+#buy_btn {
+	width: 100%;
+	height: 100%;
+}
+#app_detail {
+	width: 100%;
+	height: 10%;
+	background-color: #171616;
+	border-radius:10px;
+	background-size:100% 100%;
+	
+	/*background:url('../img/info_image.png');
+	 background-size:100% 100%;*/
+	margin-bottom: 5%;
+}
+#row1, #row2 {
+	width: 98%;
+	height: 45%;
+	padding:1%;
+}
+#app_date, #app_downloads {
+	float: left;
+	margin-left: 1%;
+}
+#app_size, #app_version {
+	float: right;
+	margin-right: 1%;
+}
+.app_descrpition {
+	width: 100%;
+	height: 100%;
+	
+	overflow-y: hidden;
+	overflow-x: hidden;
+	/*background: url('../img/info_des_bg.png');*/
+	background-color:#171616;
+	border-radius:10px;
+	background-size:100% 100%;
+	max-height: 17.4em;
+	line-height: 1.2em;
+	text-overflow: ellipsis;
+	
+	
+}
+
+#app_lbl {
+	height: 10%;
+	color: orange;
+	
+	padding:4%;
+	
+}
+#app_desc_value {
+	height: 65%;
+	float: left;
+	
+	padding:4%;
+	width:90%;
+	 
+}
+#widget_description
+{
+height: 38%;
+margin-bottom:5%;
+}
+.app_rt_btn {
+	width: 100%;
+	height: 5%;
+	margin-bottom:10%;
+}
+.review_btn {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+.tweets_btn {
+	width: 50%;
+	height: 100%;
+	float: right;
+}
+
+#app_rating {
+	width: 100%;
+	height: 9%;
+	background: url('../img/write_review_btn_bg.png') no-repeat;
+	background-size: 100% 100%;
+}
+#rating_lbl {
+	width: 50%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	margin-top: 5%;
+}
+#rating_value {
+	width: 50%;
+	height: 100%;
+	float: right;
+	margin-bottom: 5%;
+	margin-top: 5%;
+}
+#rating_bar {
+	width: 100%;
+	height: 30%;
+	margin-top:2.5%;
+	margin-left:0%;
+}
+#user_rating {
+	width: 100%;
+	height: 30%;
+	text-align: center;
+}
+
+#num_user{
+	width: 100%;
+	height: 30%;
+	text-align: center;
+	margin-left: 30%;
+	margin-top: -15%;
+}
+
+/************************************************************************************************************
+ Right Part
+ *****************************************************************************************************/
+#right_cont {
+	width: 75%;
+	height: 98%;
+	float: right;
+	margin-right: 1%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	
+}
+#logoutpopUpDiv {
+	width: 35%;
+	height: 35%;
+	left: 25%;
+	top: 10%;
+	background: url('../img/wecome_bg.png') no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	display: none;
+}
+#l_message {
+	width: 100%;
+	height: 50%;
+	text-align: center;
+}
+#logoutm {
+	position: relative;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 12%;
+}
+#l_buttons {
+	margin-left: 14%;
+	width: 70%;
+	height: 35%;
+}
+
+#l_cancel {
+	width: 45%;
+	height: 50%;
+	margin-left: 29%;
+	
+}
+
+
+/*****************************************
+ Application Title Part
+ *******************************************/
+
+#top_cont {
+	width: 100%;
+	height: 7%;
+	background-image: url('../img/info_top_heading_bg.png');
+	background-size: 100% 100%;
+	margin-bottom: 1.5%;
+	border-radius:10px;
+}
+#app_title {
+
+	position: relative;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 1%;
+	color: orange;
+}
+
+/*****************************************
+ Animation Part
+ *******************************************/
+
+#middle_cont {
+	width: 100%;
+	height: 60%;
+	/*background: url('../img/info_banner_bg.png') no-repeat;*/
+	background-color:#171616;
+	border-radius:10px;
+	background-size:100% 100%;
+	margin-bottom: 1.5%;
+}
+  
+ 
+#featureCarousel img {
+	width: 260%;
+	height: 42%;
+	border: none;
+	-webkit-transform-style: preserve-3d;
+}
+#featureCarousel .feature {
+	position: absolute;
+	margin-left: 25%;
+	margin-top: 12%;
+	
+	cursor: pointer;
+}
+#img1,#img2,#img3
+{
+visibility:hidden;
+}
+#featureCarousel .feature > div {
+
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	background-color: black;
+	width: 100%;
+}
+ 
+ 
+ 
+ 
+
+/*****************************************
+ Sponsored Application Part
+ *******************************************/
+#bottom_cont {
+width: 100%;
+	height: 28%;
+	/*background: url('../img/info_sponser_bg.png') no-repeat;*/
+	background-color:#171616;
+	border-radius:10px;
+	background-size:100% 100%;
+	margin-bottom: 2%;
+}
+
+#sponsored_thumb {
+	width: 25%;
+	height: 90%;
+	float: left;
+	margin: 1%;
+	background-color: #171617;
+}
+
+#thumb_img {
+	height: 70%;
+	width: 100%;
+	margin-top:3%;
+}
+
+#thumb_desc {
+	height: 30%;
+	width: 100%;
+}
+.star {
+	height: 15px;
+}
+#rating {
+	margin-left:1.5%;
+	width: auto;
+}
+#app_name{
+margin-left:1.5%;
+	width: auto;
+}
+#app_price {
+	margin-top:-10%;
+	width: auto;
+	float: right;
+	
+}
+
+.sponsored_desc {
+	width: 70%;
+	height: 90%;
+	float: left;
+	margin: 1%;
+}
+.descrpition {
+	height: 70%;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	margin-bottom: 2%;
+	margin-bottom: 2%;
+	text-overflow: ellipsis;
+	
+}
+.spon_btn {
+	height: 20%;
+}
+
+.sponsored_btn {
+	width: 40%;
+	height: 100%;
+	float: left;
+	margin-top: 1%;
+}
+#sponsored_lbl {
+	width: 60%;
+	float: right;
+	color: orange;
+	text-align: center;
+	margin-top: 1%;
+}
+#app_1
+{
+max-height: 10.4em;
+	line-height: 1.5em;
+height:100%;
+}
+
+/************************************************
+ *********media styles*************************
+ */
+
+@media screen and (max-width: 1600px) and (max-height: 900px){
+	.fonttitle {
+		font-size: 28px;
+	}
+	.fontbutton {
+		font-size: 20px;
+	}
+
+	/*
+	 .fontnormal {
+	 font-size: 18px;
+	 }*/
+
+	.fontlabel {
+		font-size: 21px;
+	}
+	.fontappdetail {
+		font-size: 16px;
+	}
+	.star {
+		height: 18px;
+	}
+}
+@media screen and (max-width: 1280px) and (max-height: 800px) {
+	.fonttitle {
+		font-size: 27px;
+	}
+	.fontbutton {
+		font-size: 19px;
+	}
+
+	.fontnormal {
+		font-size: 17px;
+	}
+
+	.fontlabel {
+		font-size: 20px;
+	}
+	.fontappdetail {
+		font-size: 15px;
+	}
+	.star {
+		height: 17px;
+	}
+	/*#featureCarousel .feature {
+		margin-top: 40%;
+	}*/
+
+}
+@media screen and (max-width: 1152px) and (max-height: 864px){
+	.fonttitle {
+		font-size: 26px;
+	}
+	.fontbutton {
+		font-size: 18px;
+	}
+
+	.fontnormal {
+		font-size: 15px;
+	}
+
+	.fontlabel {
+		font-size: 19px;
+	}
+	.fontappdetail {
+		font-size: 14px;
+	}
+	.star {
+		height: 16px;
+	}
+
+}
+
+@media screen and (max-width: 980px) and (max-height: 496px) {
+	.fonttitle {
+		font-size: 23px;
+	}
+	.fontbutton {
+		font-size: 15px;
+	}
+
+	.fontnormal {
+		font-size: 13px;
+	}
+
+	.fontlabel {
+		font-size: 15px;
+	}
+	.fontappdetail {
+		font-size: 11px;
+	}
+	.star {
+		height: 12px;
+	}
+	#featureCarousel img {
+		width: 210%;
+		height:38%;
+	}
+}
+@media screen and (max-width: 800px) and (max-height: 600px) {
+.fonttitle {
+		font-size: 22px;
+	}
+	.fontbutton {
+		font-size: 14px;
+	}
+
+	.fontnormal {
+		font-size: 12px;
+	}
+
+	.fontlabel {
+		font-size: 14px;
+	}
+	.fontappdetail {
+		font-size: 10px;
+	}
+	.star {
+		height: 11px;
+	}
+	#featureCarousel img {
+		width: 200%;
+		height:34%;
+	}
+
+}
+
+@media screen and (max-width: 800px) and (max-height: 480px) {
+	.fonttitle {
+		font-size: 22px;
+	}
+	.fontbutton {
+		font-size: 14px;
+	}
+
+	.fontnormal {
+		font-size: 12px;
+	}
+
+	.fontlabel {
+		font-size: 14px;
+	}
+	.fontappdetail {
+		font-size: 10px;
+	}
+	.star {
+		height: 10px;
+	}
+	#featureCarousel img {
+		width: 200%;
+		height: 34%;
+	}
+	
+@media screen and (max-width: 480px) and (max-height: 320px) {
+
+	.fonttitle {
+		font-size: 18px;
+	}
+	.fontbutton {
+		font-size: 10px;
+	}
+
+	.fontnormal {
+		font-size: 8px;
+	}
+
+	.fontlabel {
+		font-size: 10px;
+	}
+	.fontappdetail {
+		font-size: 6px;
+	}
+	.star {
+		height: 8px;
+	}
+	
+	
+	#featureCarousel img {
+		width: 20%;
+		height: 4%;
+	}
+}
+@media screen and (max-width: 320px) and (max-height: 240px){
+	.fonttitle {
+		font-size: 16px;
+	}
+	.fontbutton {
+		font-size: 8px;
+	}
+
+	.fontnormal {
+		font-size: 6px;
+	}
+
+	.fontlabel {
+		font-size: 8px;
+	}
+	.fontappdetail {
+		font-size: 4px;
+	}
+	.star {
+		height: 6px;
+	}
+	
+	#featureCarousel img {
+		width: 20%;
+		height: 4%;
+	}
+	
+ 
+}
+

@@ -1,0 +1,430 @@
+
+<html>
+	<head>
+		<title> HomeScreen </title>
+		<!-- Base CSS-->
+		<link href="css/base.css" rel="stylesheet" type="text/css">
+		<!-- Main file-->
+		<link href="css/home.css" rel="stylesheet"  type="text/css" />
+		<link href="css/popUpNew.css" rel="stylesheet" type="text/css">
+		<link href="css/logoutcss.css" rel="stylesheet" type="text/css">
+		<script src="js/jquery-1.9.1.js"></script>		
+		
+		<script src="js/keycode.js" type="text/javascript"></script>
+		<script src="js/home.js"></script>
+		<script src="js/button_handling.js"></script>
+		<script src="js/infoClass.js"></script>
+		<script src="js/myAppStore.js"></script>
+		<script src="js/popUp.js"></script>
+		<script src="js/logout_popup.js"></script>		
+		<script src="js/image-slideshow-5.js"></script>
+		<script src="js/sponsar_anim.js"></script>
+		<script src="js/http_request.js"></script>
+		<!----------->
+		<link href="http://code.jquery.com/ui/1.9.0/themes/ui-darkness/jquery-ui.css" rel="stylesheet">
+
+	<script src="js/jquery-1.9.1.js"></script>
+			<link rel="stylesheet" href="css/keyboard.css">
+			<script type="text/javascript" src="js/jquery.js"></script>
+			<script type="text/javascript" src="js/signature.js"></script>
+			<script type="text/javascript" src="js/jquery-ui-1.8.17.custom.min.js"></script>
+			<script type="text/javascript" src="js/cross-xhr.js"></script>
+			<script type="text/javascript" src="js/touch.js"></script>
+			<script type="text/javascript" src="js/vkboard.js"></script>
+			<script type="text/javascript" src="js/popUp.js"></script>
+			<script type="text/javascript" src="js/jquery.keyboard.js"></script>
+			<script type="text/javascript" src="js/jquery.keyboard.extension-navigation.js"></script>
+			<!-- keyboard extensions (optional) -->
+			<script src="js/jquery.mousewheel.js"></script>
+			<script src="js/jquery.keyboard.extension-typing.js"></script> 
+			<script src="js/jquery.keyboard.extension-autocomplete.js"></script> 
+			<!----------->
+		
+		
+		
+		
+		
+		
+		
+		
+		<script src="js/homenavigation.js"></script>
+		<!--<script src="js/navigation_login.js"></script>-->
+		<script type="text/javascript">
+	/*	$(document).ready(function() {
+
+			_(" ").setFocusId();
+
+			_(" ").KeyDown();
+			
+			 
+		});*/
+	</script>
+	<script type="text/javascript">
+	 
+
+			$(function() {
+				
+				// change default navigation keys
+				$.extend($.keyboard.navigationKeys, {
+					toggle     : 112, // toggle key; F1 = 112 (event.which value for function 1 key)
+					enter      : 13,  // Enter
+					pageup     : 33,  // PageUp key
+					pagedown   : 34,  // PageDown key
+					end        : 35,  // End key
+					home       : 88,  // Home key
+					left       : 37,  // Left arrow key
+					up         : 38,  // Up arrow key
+					right      : 39,  // Right arrow key
+					down       : 40   // Down arrow key
+				});
+				
+				$('#searchTextBox').keyboard({
+					
+					alwaysOpen: false,
+					usePreview: false,
+					position: {
+						of: $(window),
+						// null (attach to input/textarea) or a jQuery object (attach elsewhere)
+						//my: 'center bottom',
+						//at: 'center bottom',
+						//at2: 'center bottom'
+					}
+				}).addNavigation({
+					position: [2, 2],
+					// set start position [row-number, key-index]
+					toggleMode: true,
+					// true = navigate the virtual keyboard, false = navigate in input/textarea
+					focusClass: 'hasFocus' // css class added when toggle mode is on
+				});
+
+				$('.ui-keyboard-input').bind('hidden.keyboard', function() {
+					
+					$("#openkeyboard").focus();
+				});
+
+				$('.ui-keyboard-input').bind('visible.keyboard', function(e, kb) {
+					
+					kb.$keyboard.find('.ui-state-hover').removeClass('ui-state-hover');
+					kb.navigation_options.toggleMode = true;
+					kb.navigation_init();
+				});
+				$("#openkeyboard").focus();
+			});
+			$("#openkeyboard").click(function() {
+				var kb = $('#searchTextBox').getkeyboard();
+				kb.reveal();
+			}); 
+	</script>
+	<body>
+	<style>
+            .cursor {
+            	height: 174px;
+            	width:100px;
+            	-webkit-transition: all 0.5s cubic-bezier(.43,.62,.25,1.16);
+            	border: 5px solid orange;
+            	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+            	box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);	
+            	position:absolute;
+            	z-index:600;
+				visibility:hidden;
+            	
+            }
+    
+        </style>
+	<body>
+	<style>
+            .cursor {
+            	height: 174px;
+            	width:100px;
+            	-webkit-transition: all 0.5s cubic-bezier(.43,.62,.25,1.16);
+            	border: 5px solid orange;
+            	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+            	box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);	
+            	position:absolute;
+            	z-index:600;
+				visibility:hidden;
+            	
+            }
+    
+        </style>
+		</head>
+		 <div class='cursor' id="cursor" style="z-index:1000;"></div>
+		<div id="wrapper">
+<!-- Left Section*************** -->
+			<section id="home_left_cont">
+					<div id="logo_cont">
+						<img id="logo_img" src="img/tata_elxsi.png" alt="">
+					</div>
+
+					<div id="menulist_cont">
+							
+					</div>
+					<div id="advert_cont">
+					<div id="left_advert_cont">		
+						<img id="left_img" alt="" src="http://upload.wikimedia.org/wikipedia/commons/c/ce/Transparent.gif">
+					</div>
+					<div id="right_advert_cont">	
+						<img id="right_img" alt="" src="http://upload.wikimedia.org/wikipedia/commons/c/ce/Transparent.gif">
+					</div>
+					</div>
+			</section>
+			
+			<img id="loading_animation" class="" src="img/loading_animation.png">
+			
+<!-- Middle Section*************** -->
+			<section id="middleSection">
+				<div id="menubar" >
+						<!--<img id="menu_left_arrow" class="menuarrow topmenu" src="img/arrow_left_hover.png" onclick="moveLeftMenus();">-->
+						<div id="menu_cont">
+							<div id="feature" class="topmenu font_mainbutton" onclick="getFeaturedApp();">Featured</div>
+							<div id="categories" class="topmenu font_mainbutton" onclick="getCategoriesApp();">Categories</div>
+							<div id="toprated" class="topmenu font_mainbutton" onclick="getTopnewsApp();">Top Rated</div>
+							<div id="myapp" class="topmenu font_mainbutton" onclick="getMyappApp();">My Apps</div>
+							<div id="search" class="topmenu font_mainbutton" onclick="searching();">Search</div> 
+							<!--<div id="more" class="topmenu font_mainbutton" onclick="more();">More</div>
+							<div id="mydiscountapps" class="topmenu font_mainbutton" onclick="getMydiscountappsApp();">MyDiscountApps</div>-->
+						</div>
+						<!--<img id="menu_right_arrow" class="menuarrow topmenu" src="img/arrow_right_hover.png" onclick="moveRightMenus();">-->
+					
+				</div>
+				
+				<div id="thumbnail_container"class="thumbnail_container">
+				
+				</div>
+				
+				<!--<div id="v_arrow_cont">
+					
+					<div id="topArrow" onclick=""><p class="v_arrow">Next</p></div>
+					<div id="downArrow" onclick=""><p class="v_arrow">Prev</p></div>
+				</div>-->
+				
+			</section>
+<!-- Right Section*************** -->
+			<section id="home_right_cont">
+				<section id="hr_topsection">
+					<div id="user_data">
+						<div id="usr_prof_cont">
+							<!--<div id="top_gap"></div>
+							<div id="currentuser" class="font_normal"></div>
+							<img src="" id="userimg"/>
+							<div id="bottom_gap"></div>-->
+							<div id="top_gap"></div>
+							<div id="middle"> 
+							<div id="currentuser" class="font_normal"></div>
+							<img src="" id="userimg"/>
+							</div>
+							<div id="bottom_gap"></div>
+						</div>
+						<div id="myprof_log_cont">
+							<button id="myprofile" class="font_h_button button" onclick="myprofileScreen();">MyAccount</button>
+							<button id="logout" class="font_h_button button" onclick="logout();">Logout</button>
+						</div>
+					</div>
+				</section>
+				<section id="hr_middlesection">
+				<div id="dummy_spc_top"></div>
+					<div id="r_app_detail">
+						<div id="r_desc_img_cont">
+							<img id="r_app_img" src=""/>
+						</div>
+						<div id="r_desc_details_cont">
+							<div id="r_desc_row1">
+								<div id="r_app_name" class="font_normal"></div>
+								<div id="r_app_rating">
+									<img class="r_app_star" id="destar1" src=""/>
+									<img class="r_app_star" id="destar2" src=""/>
+									<img class="r_app_star" id="destar3" src=""/>
+									<img class="r_app_star" id="destar4" src=""/>
+									<img class="r_app_star" id="destar5" src=""/>
+								</div>
+							</div>
+							<div id="r_desc_row2">
+								<div id="r_develop_by" class="font_normal"></div>
+								<div id="r_rating_rate" class="font_normal"></div>
+							</div>
+						</div>
+						<div id="r_main_desc_cont" class="font_normal">
+							
+						</div>
+						<div id="r_desc_buttons_cont">
+							<div id="r_open_cont">
+								<div id="buy_cont">
+									<button id="buy" class="font_h_button button" homeScreen="false" onclick="buyScreen();" >Buy </button>
+									<button id="register" class="font_h_button button" onclick="homeRegisterApp();">Register</button>
+									<button id="open" class="font_h_button button" onclick="openApp();">Open</button>
+									<button id="unregister" class="font_h_button button" onclick="homeUnregisterApp();">UnRegister</button>
+								</div>
+								<button id="lock" class="font_h_button button" disabled onclick="lockApp();">Lock </button>
+							</div>
+							<div id="r_info_cont">
+								 <div id='fb-root'></div>
+									<script src='http://connect.facebook.net/en_US/all.js'></script>
+									<button id="share" class="font_h_button button" onclick='postToFeed(); return false;';>Share</button>
+									
+									<script src='js/fbui.js'></script>
+								<button id="info" class="font_h_button button" onclick="infoScreen();">Info</button>
+							</div>
+						</div>
+					</div>
+				<div id="dummy_spc_btm"></div>
+				</section>
+					<!--<div id="right_advert_cont">	
+						<script>
+								window.setInterval("fadeSponAnimDiv();", 6000); //call fade in 6 seconds	
+						</script> 
+							<div id="right_advert_img">
+								<img id="right_img" src="img/android.jpg" alt="">
+							</div>
+							<div id="right_advert_data_cont">
+								<div id="right_advert_data">
+									<div id="r_adt_desc_details">
+										<div id="r_adt_app_name">Angry Bird</div>
+										<div id="r_rating">
+											<div id="r_adt_app_rating">
+												<img class="r_adt_star" src="img/e_star.png"/>
+												<img class="r_adt_star" src="img/e_star.png"/>
+												<img class="r_adt_star" src="img/e_star.png"/>
+												<img class="r_adt_star" src="img/e_star.png"/>
+												<img class="r_adt_star" src="img/e_star.png"/>
+											</div>
+											<div id="r_app_numberRating">(10)</div>
+										</div>
+										<div id="r_app_price">$5</div>
+										<div id="r_app_type">Sponsored App</div>
+
+									</div>
+								</div>
+							</div>
+						
+					</div>-->
+
+			</section>
+		</div>
+			<script>
+				//CreateDivElement();
+				//initGalleryScript();
+			</script>
+			
+			<div id= "searchPopUp">
+				<input type="text" id="searchTextBox" class="font_searchinput">
+				</input>
+				<button type="button" id="searchTextButton" class="button font_searchbutton" onclick="searchApps();">Search
+				</button>
+			</div>
+		<!--	<div id="popUpDiv" >
+			
+				<div id="topPop" onclick="showTextBox();">
+					<u>Click here to enter coupon code</u>
+				</div>
+				<div id="topDown">
+					<div id="couponText">Enter coupon code</div>
+					<div id="couponBox">
+						<input id="box" type="text" size="10">
+						<input id="submit"  type="submit" value="Submit" onclick="verifyCouponNumber();">
+					</div>					
+				</div>
+				<div id="middlePop">
+					<div id="midLeft"></div>
+					<div id="midRight">Angry Birds<br><p>Bsquare Corporation<br></p><p>Downloads:&nbsp;100<br></p><p>Price:&nbsp;2$</p></div>
+				</div>
+				<div id="bottomPop">
+				<form method="post" action="https://www.sandbox.paypal.com/cgi-bin/webscr" class="paypal-button" target="_blank" style="opacity: 1;">
+					<input type="hidden" name="business" value="shilpa@gmail.com">
+					<input type="hidden" name="item_name" value="My product">
+					<input type="hidden" name="quantity" value="">
+					<input type="hidden" name="amount" value="1.00">
+					<input type="hidden" name="shipping" value="">
+					<input type="hidden" name="tax" value="">
+					<input type="hidden" name="cmd" value="_xclick">
+					<input type="image" id="payPal" src="img/buy_now.gif">
+				</form>
+				<button id="payCancel" onclick="closeCall();">
+						Cancel
+				</button>
+				</div>
+			</div>
+			<div id="ErrorDiv" ><br><br><br>
+				<label id="errorLabel"></label>
+			</div>-->
+			<!-- Exit PopUp-->
+				<!-- Exit PopUp-->
+		<div id="logoutpopUpDiv" >
+			<div id="l_message">
+				<p id="logoutm" class="font_normal">
+					Do you want to Logout?
+				</p>
+			</div>
+			<div id="widget_logout" >
+				<button id="logout_1" class="button font_h_button" isFocused="true" childBegin="true" childEnd="false" childTop="false" childBottom="false"  childLeft="false" childRight="false" onclick="logoutOk();">
+					OK
+				</button>
+				<button id="logout_2" class="button font_h_button" isFocused="true" childBegin="false" childEnd="true" childTop="false" childBottom="false"  childLeft="true" childRight="false" onclick="logoutCancel();">
+					CANCEL
+				</button>
+			</div>
+		</div>
+			<!-- settings PopUp-->
+			<div id="settingPopup">
+					<button id="s_cancel" onclick="closePopup();">
+					X
+					</button>
+					<div id="b_cont">
+					<button id="about_us" class="button font_h_button">
+					About Us
+					</button>
+					<button id="change_p" class="button font_h_button" onclick="changePassword();">
+					Change Password
+					</button>
+				</div>
+				
+			</div>
+			<!-- Error PopUp for pay pal-->
+				<div id="closePop">
+					<div class="close_cont">
+						<div id="eMessage" class="font_normal"></div>
+						<button id="gCancel" class="button font_h_button" onclick="removeErrorPopUp();">Cancel</button>
+					</div>
+				</div>
+			<!-- Error PopUp-->
+				<div id="closePopup">
+					<div id="close_cont">
+						<div id="e_message" class="font_normal">Error!!</div>
+						<button id="gcancel" class="button font_h_button" onclick="removeErrorPopUp();">Cancel</button>
+					</div>
+				</div>
+		<div id="changePassword">
+			<div id="cp_cont">
+				<div id="cp_msg" class="font_normal">
+					Change Password
+				</div>
+				<div id="cp_email">
+					<div id="cemail" class="font_normal">
+						Email:
+					</div>
+					<input type="text" id="vemail"/>
+				</div>
+				<div id="o_password">
+					<div id="opasswd" class="font_normal">
+						Old Password:
+					</div>
+					<input type="password" id="vopasswd"/>
+				</div>
+				<div id="n_password">
+					<div id="npasswd" class="font_normal">
+						New Password:
+					</div>
+					<input type="password" id="vnpasswd"/>
+				</div>
+				<div id="c_button">
+					<button id="cp_button" class="font_h_button button" onclick="submitPassword();">
+						Submit
+					</button>
+					<button id="cancel_button" class="font_h_button button" onclick="cancelPassword();">
+						Cancel
+					</button>
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>

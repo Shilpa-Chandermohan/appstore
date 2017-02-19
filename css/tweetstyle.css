@@ -1,0 +1,304 @@
+hr {
+	background-color:gray;
+	height: 1px;
+	width:98%;
+}
+#tweetdata {
+	width: 100%;
+	height: 100%;
+	background: url('../img/bg.jpg') no-repeat;
+	background-size: 100% 100%;
+	font-family: Verdana;
+	
+}
+#tweet_topcont {
+	width: 100%;
+	height: 30%;
+}
+#tweet_bottcont {
+	width: 100%;
+	height: 70%;
+}
+#tweet_head {
+	width: 96%;
+	height: 19%;
+	margin-left: 2%;
+	margin-bottom: 1%;
+}
+#tweet_article {
+	width: 96%;
+	height: 65%;
+	background-color:#171616;
+	border-radius:10px;
+	margin-left: 2%;
+	color:white;
+}
+#tweet_left {
+	width: 19%;
+	height: 100%;
+	float: left;
+}
+#tweet_right {
+	width: 79%;
+	height: 100%;
+	float: right;
+}
+#tweet_img {
+	width: 100%;
+	height: 100%;
+	border-radius: 12px;
+}
+#tdata_cont {
+	width: 60%;
+	height: 80%;
+	margin-top: 2%;
+	position: relative;
+	float:left;
+}
+#tweet_name {
+	width: 100%;
+	height: 30%;
+}
+#tdata1 {
+	width: 100%;
+	height: 20%;
+}
+#tdata2 {
+	width: 100%;
+	height: 20%;
+}
+#tdata3{
+	width: 100%;
+	height: 20%;
+}
+#p_supported{
+	width:50%;
+	float:left;
+}
+#t_author{
+	width:50%;
+	float:left;
+}
+#tweet_date {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+#tweet_size {
+	width: 50%;
+	height: 100%;
+	float: right;
+}
+#tweet_nod {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+#tweet_version {
+	width: 50%;
+	height: 100%;
+	float: right;
+}
+#tweet_rating_cont{
+	width: 40%;
+	height: 80%;
+	margin-top: 2%;
+	position: relative;
+	
+	float:left;
+}
+.t_app_star{
+	height:70%;
+	
+}
+#tweet_avg{
+	height:20%;	
+	
+}
+#tweet_rate{
+	height:20%;	
+	
+}
+#tweet_ratestar{
+	height:20%;	
+
+}
+#tweet_nop{
+	height:20%;	
+	
+}
+#table_cont {
+	width: 96%;
+	height: 98%;
+	margin-left: 2%;
+	margin-bottom: 2%;
+	background-color:#171616;
+	border-radius:10px;
+	overflow: hidden;
+}
+#tweetTable {
+	width: 100%;
+	height: 98%;
+	margin-top: 1%;
+}
+.totweet {
+	height: 5%;
+}
+.tdone {
+
+	width: 8%;
+	height: 8%;
+}
+.userimg {
+	width: 60px;
+	height: 61px;
+	margin-left: 5%;
+	border-radius: 10px;
+}
+.username {
+	height: 45%;
+	color: #BB6542;
+}
+.userdesc {
+	color:white;
+	height: 55%;
+}
+.usertime {
+	float: right;
+	color: #BB6542;
+	margin: 10%;
+}
+.tdtwo {
+
+	width: 78%;
+}
+.tdthree {
+
+}
+.tdfour {
+	width: 100%;
+}
+.font_tweet {
+	color: #D85423;
+	font-size: 25px;
+	font-weight: 600;
+}
+.font_tweetapp {
+
+	font-size: 23px;
+	font-weight: 500;
+}
+.font_tweetnor {
+	font-size: 18px;
+}
+
+/*******************Media queries*******************/
+@media only all and (max-width: 1600px) and (max-height: 900px) {
+	.font_tweet {
+		font-size: 26px;
+	}
+	.font_tweetapp {
+		font-size: 24px;
+	}
+	.font_tweetnor {
+		font-size: 19px;
+	}
+}
+@media only all and (max-width: 1280px) and (max-height: 1024px) {
+	.font_tweet {
+		font-size: 25px;
+	}
+	.font_tweetapp {
+		font-size: 23px;
+	}
+	.font_tweetnor {
+		font-size: 18px;
+	}
+}
+@media only all and (max-width: 1280px) and (max-height: 800px) {
+}
+@media only all and (max-width: 1152px) and (max-height: 864px) {
+	.font_tweet {
+		font-size: 24px;
+	}
+	.font_tweetapp {
+		font-size: 22px;
+	}
+	.font_tweetnor {
+		font-size: 16px;
+	}
+}
+@media only all and (max-width: 1024px) and (max-height: 768px) {
+	.font_tweet {
+		font-size: 22px;
+	}
+	.font_tweetapp {
+		font-size: 20px;
+	}
+	.font_tweetnor {
+		font-size: 15px;
+	}
+}
+@media only all and (max-width: 980px) and (max-height: 496px) {
+	.font_tweet {
+		font-size: 20px;
+	}
+	.font_tweetapp {
+		font-size: 17px;
+	}
+	.font_tweetnor {
+		font-size: 14px;
+	}
+}
+@media only all and (max-width: 800px) and (max-height: 600px) {
+	.font_tweet {
+		font-size: 18px;
+	}
+	.font_tweetapp {
+		font-size: 15px;
+	}
+	.font_tweetnor {
+		font-size: 12px;
+	}
+}
+@media only all and (max-width: 800px) and (max-height: 480px) {
+	.font_tweet {
+		font-size: 17px;
+	}
+	.font_tweetapp {
+		font-size: 14px;
+	}
+	.font_tweetnor {
+		font-size: 11px;
+	}
+}
+@media only all and (max-width: 480px) and (max-height: 320px) {
+	.font_tweet {
+		font-size: 15px;
+	}
+	.font_tweetapp {
+		font-size: 12px;
+	}
+	.font_tweetnor {
+		font-size: 9px;
+	}
+	.userimg {
+		width: 40px;
+		height: 41px;
+	}
+}
+@media only all and (max-width: 320px) and (max-height: 240px) {
+	.font_tweet {
+		font-size: 13px;
+	}
+	.font_tweetapp {
+		font-size: 10px;
+	}
+	.font_tweetnor {
+		font-size: 6px;
+	}
+	.userimg {
+		width: 20px;
+		height: 21px;
+	}
+}

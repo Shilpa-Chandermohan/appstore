@@ -1,0 +1,128 @@
+  
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML5 Contact Form</title> 
+	<link rel="stylesheet" media="screen" href="css/register.css" >   
+	<link rel="stylesheet" media="screen" href="css/base.css" > 
+	<script src="js/jquery-1.9.1.js"></script> 
+	<script src="js/keycode.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/navigation_login.js"></script>
+	<script type="text/javascript" src="js/dropdown.js"></script> 
+	<script src="js/logout_popup.js"></script>   
+    <script src="js/http_request.js"></script> 
+	  <script src="js/register.js"></script>  
+<script type="text/javascript">
+            $(document).ready(function() {
+			
+			_(" ").setFocusId();
+		
+			_(" ").KeyDown();
+            });
+		</script>
+</head>
+<body id="regpage">
+ 
+  <style>
+            .cursor {
+            height: 40px;
+			width: 160px;
+			-webkit-transition: all 0.5s cubic-bezier(.43,.62,.25,1.16);
+			border: 3px solid #FF9900;
+			-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+			box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+			left:210px;
+			top:650px;
+			position: absolute;
+			z-index:999;
+            }
+    
+        </style>
+<form class="contact_form" action="#" method="post" name="contact_form" >
+    <ul>
+        <li>
+             <p id="FormDetail">User Registration</p> 
+			 <hr></hr>
+			  <b><label id="regerror"></label> 
+        </li> 
+        <li id="widget_fname" widgetBottom="widget_lname" >
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname_1" isFocused="true" childBegin="true" childEnd="true" childTop="false" childBottom="false"  childLeft="true" childRight="true" placeholder=" " required  onblur="valfirstname()" onkeypress="return restrictSpace()"/>
+			<div id='fnameerror'></div> 
+		</li>
+		<li id="widget_lname" widgetBottom="widget_email" widgetTop="widget_fname">
+            <label for="lname">Last Name:</label>
+            <input type="text" class="surname" id="lname_1" isFocused="true" childBegin="true" childEnd="true" childTop="false" childBottom="false"  childLeft="true" childRight="true" placeholder=" " required onblur="vallastname()" onkeypress="return restrictSpace()"/>
+			<div id='lnameerror'></div>
+		</li> 
+		 <li id="widget_email" widgetBottom="widget_pwd" widgetTop="widget_lname">
+            <label for="email">Email:</label>
+            <input type="email" id="email_1" isFocused="true" maxlength="31" childBegin="true" childEnd="true" childTop="false" childBottom="false"  childLeft="true" childRight="true" name="email" placeholder=" " required onblur="valEmail()" onkeypress="return restrictSpace()"/>
+          <!--  <span class="form_hint">Proper format "name@something.com"</span>-->
+			<div  id='emailerror'></div>
+			
+		</li> 
+		<li id="widget_pwd" widgetTop="widget_email"  widgetBottom="widget_cpwd">
+		    <label for="password">Password:</label>
+            <input type='password'  id='pwd_1'  isFocused="true" childBegin="true" childEnd="true" childTop="false" childBottom="false"  childLeft="true" childRight="true" name="email" value="" length = 25 placeholder="password" required name='pwd' onfocusout ="checkPasswordStrength(document.getElementById('pwd_1').value)" onkeypress="return restrictSpace()"/>
+			<div id='passwordStrength'></div> 
+	   </li>
+	   <li id="widget_cpwd" widgetTop="widget_pwd"  widgetBottom="widget_country">
+		    <label for="password">Confirm Password:</label> 
+			<input type='password'  id='cpwd_1'  isFocused="true" childBegin="true" childEnd="true" childTop="false" childBottom="false"  childLeft="true" childRight="true" length = 25 placeholder="confirm password" required name='confirmPwd' onfocusout ="checkPassword(document.getElementById('pwd_1'),document.getElementById('cpwd_1'));"  onkeypress="return restrictSpace()"/>
+		    <div id='passwordError'> </div> 
+	  </li> 
+	  <li id="widget_country" widgetTop="widget_cpwd"  widgetBottom="widget_dob">
+		<label for="country" >Country:</label>   
+			<select id="country_1" isSelect1="true" isFirst="false" isFocused="true" childBegin="true" childEnd="true" childTop="false" childBottom="false"  childLeft="true" childRight="true" placeholder=" "  onchange=""; disabled> 
+	 </select> 
+	 </li>  
+	 <li id="widget_dob" widgetTop="widget_country"  widgetBottom="widget_address">  
+	  
+	      <label  for="DOB">Date of Birth: </label></td>
+	      <input  id="dob_1" isFocused="true" childBegin="true" childEnd="true" childTop="false" childBottom="false"  childLeft="true" childRight="true" type="text" id="datepicker" placeholder="yyyy-mm-dd" required onblur="validatedob();" onkeypress="return restrictSpace()" />   
+	      <div id='doberror'> </div> 
+	 </li >    
+		 <li  id="widget_address" widgetTop="widget_dob"  widgetBottom="widget_hint">
+            <label for="textarea">Address:</label>
+			<!--changed here-->
+            <textarea id="address_1" style="font-family: Arial;font-size: 13px;" isFocused="true"  childBegin="true" childEnd="true" childTop="false" childBottom="false"  childLeft="true" childRight="true"></textarea> 
+         </li>  
+		 <li id="widget_hint" widgetTop="widget_address"  widgetBottom="widget_ans"  >
+			<label for="hint-ques">Hint-Question:</label>
+			<select id="hint_1" isSelect2="true" isFirst1="false" isFocused="true" childBegin="true" childEnd="true" childTop="false" childBottom="false"  childLeft="true" childRight="true" onchange=""; disabled>
+				 <option selected="selected" value="">Select a Security Question</option>
+				 <option value="randomvar2">what is your mothers maiden name?</option>
+				 <option value="randomvar2">What is your best friends name?</option>
+				 <option value="randomvar2">What is your pets name?</option>
+				 <option value="randomvar2">option3</option>
+				 <option value="randomvar2">option3</option>
+				 <option value="randomvar2">option3</option>            
+			</select> 
+		</li>
+			<li id="widget_ans" widgetTop="widget_hint"  widgetBottom="widget_sub">
+            <label   for="hint-ans">Hint-Answer:</label>
+            <input type="text" id="ans_1" isFocused="true" childBegin="true" childEnd="true" childTop="false" childBottom="false"  childLeft="true" childRight="true" placeholder=" " required onblur="valHint();"/>
+			<div id='anserror'> </div> 
+	   </li> 
+        <li id="widget_sub" widgetTop="widget_ans"  widgetBottom="">
+        	<button  type="button" class="submit button"  id="sub_1" isFocused="true" childBegin="true" childEnd="false" childTop="true" childBottom="false"  childLeft="false" childRight="false" class="btnConfirm" type="submit" >Submit Form </button>
+            <button class="submit button" id="sub_2" isFocused="true" childBegin="false" childEnd="true" childTop="false" childBottom="false"  childLeft="true" childRight="false"type="reset" >Reset Form</button>
+        </li> 
+    </ul>
+</form>
+<!-- Error PopUp-->
+				<div id="closePopup">
+					<div id="close_cont">
+						<div id="e_message" class="font_normal">Error!!</div>
+						<button id="gcancel" class="button font_h_button" isvisible="false" onclick="removeErrorPopup1();">Cancel</button>
+					</div>
+				</div>
+<div class='cursor' id="cursor"></div>
+<Script>
+	_(" ").setCursorPosition(" ","fname_1");
+	$("#fname_1").focus();
+	</script>
+</body>
+</html>

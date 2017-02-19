@@ -1,0 +1,91 @@
+<html>
+	<head>
+	<link href="css/base.css" rel="stylesheet" type="text/css">
+		<link href="css/tweetstyle.css" rel="stylesheet" type="text/css">
+		<script src="js/jquery-1.9.1.js"></script>
+		<script src="js/keycode.js" type="text/javascript"></script>
+		<script src="js/tweetdisplay.js"></script>
+		<script src="js/http_request.js"></script>
+		<script src="js/logout_popup.js"></script>
+		<script src="js/myAppStore.js" type="text/javascript"></script>		
+	</head>
+	<body>
+	<img id="loading_animation" class="" src="img/loading_animation.png">
+		<div id="tweetdata">
+			<div id="tweet_topcont">
+				<div id="tweet_head" class="font_tweet">
+					Tweets
+				</div>
+				<div id="tweet_article">
+					<div id="tweet_left">
+						<img id="tweet_img" src="img/app_04.jpg"/>
+					</div>
+					<div id="tweet_right">
+						<div id="tdata_cont">
+							<div id="tweet_name" class="font_tweetapp">
+								Cool bird
+							</div>
+							<div id="tdata1">
+								<div id="tweet_date" class="font_tweetnor">
+									Aug 22-8-2012
+								</div>
+								<div id="tweet_size" class="font_tweetnor">
+									11MB
+								</div>
+							</div>
+							<div id="tdata2">
+								<div id="tweet_nod" class="font_tweetnor">
+									HTML5,Android
+								</div>
+								<div id="tweet_version" class="font_tweetnor">
+									v3.0
+								</div>
+							</div>
+							<div id="tdata3">
+								<div id="p_supported" class="font_tweetnor">
+									HTML,Android
+								</div>
+								<div id="t_author" class="font_tweetnor">
+									Robert Dicosta
+								</div>
+							</div>
+						</div>
+						<div id="tweet_rating_cont">
+							<div id="tweet_avg" class="font_tweetnor">
+								Average Rating
+							</div>
+							<div id="tweet_rate" class="font_tweetnor">
+								3.0
+							</div>
+							<div id="tweet_ratestar" class="font_tweetnor">
+								<img class="t_app_star" id="tstar1" />
+								<img class="t_app_star" id="tstar2" />
+								<img class="t_app_star" id="tstar3" />
+								<img class="t_app_star" id="tstar4" />
+								<img class="t_app_star" id="tstar5" />
+							</div>
+							<div id="tweet_nop" class="font_tweetnor">
+								(16)
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div id="tweet_bottcont">
+				<div id="table_cont">
+					<table id="tweetTable" cellspacing="3.5">
+						<script>
+							for (var i = 0; i < 5; i++) {
+								document.write("<tr class='totweet' >")
+								document.write("<td class='tdone' ><img class='userimg' id='userimg" + i + "'  src='img/app_03.jpg' /></td><td class='tdtwo'><p class='username font_tweetnor' id='username" + i + "' ><b>George</b></p><p class='userdesc font_tweetnor' id='userdesc" + i + "'  >Cool Bird is a cute game, where you can take care of your own birds !</p></td><td class='tdthree'><p class='usertime font_tweetnor' id='usertime" + i + "' >11hr</p></td>")
+								document.write("</tr>")
+								document.write("<tr class='tdfour'><td COLSPAN=3><hr/></td></tr>")
+							}
+						</script>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

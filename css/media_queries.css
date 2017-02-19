@@ -1,0 +1,662 @@
+@media only all and (max-width: 800px) and (max-height: 600px) {
+#app-detail2{
+	
+	margin-top:4%;
+}
+#app-detail3{
+	
+	margin-top:-2%;
+}
+#app-detail5{
+	
+	margin-top:-1%;
+}
+
+}
+
+
+@media only all and (max-width: 980px) and (max-height: 496px) {
+#Row1{
+width:100%;
+
+height:20%;
+background-image:url('../img/prof_tran.png');
+}
+img
+{
+width:90;
+height:90;
+}
+
+#App-title
+{
+	font-size:14px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:red;
+}
+#type
+{
+	margin-top:1%;
+	margin-bottom:1%;	
+	font-size:14px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+}
+#Date_install
+{
+	font-size:14px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+}
+
+
+#App-title1
+{
+	font-size:14px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:red;
+}
+#type1
+{
+	margin-top:1%;
+	margin-bottom:1%;	
+	font-size:14px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+}
+#Date_install1
+{
+	font-size:14px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+}
+
+#App-title2
+{
+	font-size:14px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:red;
+}
+#type2
+{
+	margin-top:1%;
+	margin-bottom:1%;	
+	font-size:14px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+}
+#Date_install2
+{
+	font-size:14px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+}
+
+#App-title3
+{
+	font-size:14px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:red;
+}
+#type3
+{
+	margin-top:1%;
+	margin-bottom:1%;	
+	font-size:14px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+}
+#Date_install3
+{
+	font-size:14px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+}
+#Row1{
+height:33%;
+}
+#app-detail4
+{
+	margin-top:2%;
+}
+#row3
+{
+height:33%;
+}
+#second1{
+margin-top:-8%;
+
+}
+#row2
+{
+height:33%;
+}
+}
+@media only all and (max-width: 800px) and (max-height: 480px) {
+#Row1{
+width:100%;
+
+height:20%;
+background-image:url('../img/prof_tran.png');
+}
+img
+{
+width:70;
+height:70;
+}
+#app-detail3
+{
+margin-top:0;
+}
+#App-title
+{
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:red;
+}
+#type
+{
+	margin-top:1%;
+	margin-bottom:1%;	
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+}
+#Date_install
+{
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+}
+
+#second1{
+	margin-top:-12%;
+	margin-left:50%;
+}
+#second2{
+	margin-top:-12%;
+	margin-left:50%;
+}
+#App-title1
+{
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:red;
+}
+#type1
+{
+	margin-top:1%;
+	margin-bottom:1%;	
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+}
+#Date_install1
+{
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+}
+#app-detail2{
+	margin-left:25%;
+	margin-top:6%;
+}
+#App-title2
+{
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:red;
+}
+#type2
+{
+	margin-top:1%;
+	margin-bottom:1%;	
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+}
+#Date_install2
+{
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+}
+#app-detail4
+{
+margin-top:10%;
+}
+#App-title3
+{
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:red;
+}
+#type3
+{
+	margin-top:1%;
+	margin-bottom:1%;	
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+}
+#Date_install3
+{
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+}
+#app-detail6
+{
+margin-top:10%;
+}
+#Row2
+{
+height:30%;
+}
+
+
+}
+@media screen and (max-width: 480px) and (max-height: 320px) {
+img
+{
+width:70;
+height:70;
+}
+#Row3
+{
+margin-top:1%;
+height:30%
+}
+#row1
+{
+height:30%
+}
+#row2
+{
+height:30%
+}
+#second1{
+	margin-top:-20%;
+	margin-left:50%;
+}
+#second2{
+	margin-top:-20%;
+	margin-left:50%;
+}
+#screen-title{
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:orange;
+	float:left;
+}
+
+#profile-info{
+	float:right;
+	display:inline;
+}
+
+#profile-name{
+	text-align:center;
+	float:right;
+	margin-top:0%;
+	display:inline;
+}
+
+#profile-pict{
+	width:10%;
+	height:auto;
+	margin-left:5%;
+	content:url('../img/messi.jpeg');
+	float:right;
+	display:inline;
+}
+
+#transaction-title{
+	margin:1%;
+	margin-bottom:2%;
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+	
+}
+#transaction-info-title{
+	margin-left:1%;
+	font-size:12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+	
+}
+#transaction-info-data{
+	margin-left:1%;
+	font-size:12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+}
+
+
+
+/************************************************************************************
+BODY
+Installation Summary
+*************************************************************************************/
+#installation-title{
+	margin-top:2%;
+	margin-bottom:1%;
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+	float:left;
+}
+
+#installation-summary{
+	width:100%;
+	height:60%;
+	margin-top:0%;
+	float:left;
+	background-image:url('../img/rating_bg.png');
+	/*background-color:#0000FF;*/
+	
+}
+}
+@media screen and (max-width: 320px) and (max-height: 240px) {
+img
+{
+width:40;
+height:40;
+}
+#Row3
+{
+margin-top:0%;
+height:40%
+}
+#row1
+{
+height:40%
+}
+#row2
+{
+height:40%
+}
+
+#second{
+	margin-top:-25%;}
+#second1{
+	margin-top:-25%;
+	margin-left:50%;
+}
+#second2{
+	margin-top:-25%;
+	margin-left:50%;
+}
+#screen-title{
+	font-size:10px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:orange;
+	float:left;
+}
+
+#profile-info{
+	float:right;
+	display:inline;
+}
+
+#profile-name{
+	text-align:center;
+	float:right;
+	margin-top:0%;
+	display:inline;
+}
+
+#profile-pict{
+	width:10%;
+	height:auto;
+	margin-left:5%;
+	content:url('../img/messi.jpeg');
+	float:right;
+	display:inline;
+}
+
+#transaction-title{
+	margin:1%;
+	margin-bottom:2%;
+	font-size:10px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+	
+}
+#transaction-info-title{
+	margin-left:1%;
+	font-size:10px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+	
+}
+#transaction-info-data{
+	margin-left:1%;
+	font-size:10px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+}
+
+
+
+/************************************************************************************
+BODY
+Installation Summary
+*************************************************************************************/
+#installation-title{
+	margin-top:2%;
+	margin-bottom:1%;
+	font-size:10px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+	float:left;
+}
+
+#installation-summary{
+	width:100%;
+	height:60%;
+	margin-top:0%;
+	float:left;
+	background-image:url('../img/rating_bg.png');
+	/*background-color:#0000FF;*/
+	
+}
+}
+@media screen and (min-width:700px) and (max-width:800px) {
+ 
+#Row1{
+width:100%;
+
+height:30%;
+background-image:url('../img/prof_tran.png');
+}
+#second{
+	margin-top:-11%;
+	margin-left:50%;
+}
+}
+
+@media screen and (min-width:600px) and (max-width:700px) {
+ 
+#Row1{
+width:100%;
+
+height:30%;
+background-image:url('../img/prof_tran.png');
+}
+#second{
+	margin-top:-12%;
+	margin-left:50%;
+}
+}
+@media screen and (min-width:500px) and (max-width:600px) {
+ 
+#Row1{
+width:100%;
+
+height:30%;
+background-image:url('../img/prof_tran.png');
+}
+#second{
+	margin-top:-14%;
+	margin-left:50%;
+}
+}
+@media screen and (min-width:400px) and (max-width:500px) {
+ #Row1{
+width:100%;
+
+height:30%;
+background-image:url('../img/prof_tran.png');
+}
+img
+{
+width:50;
+height:50;
+}
+#App-title
+{
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:red;
+}
+#type
+{
+	margin-top:1%;
+	margin-bottom:1%;	
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+}
+#Date_install
+{
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+}
+
+#second{
+	margin-top:-14%;
+	margin-left:50%;
+}
+#App-title1
+{
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:red;
+}
+#type1
+{
+	margin-top:1%;
+	margin-bottom:1%;	
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+}
+#Date_install1
+{
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+}
+#app-detail2{
+	margin-left:21%;
+	margin-top:3%;
+}
+#App-title2
+{
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:red;
+}
+#type2
+{
+	margin-top:1%;
+	margin-bottom:1%;	
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+}
+#Date_install2
+{
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+}
+#app-detail4
+{
+margin-top:10%;
+}
+#App-title3
+{
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:red;
+}
+#type3
+{
+	margin-top:1%;
+	margin-bottom:1%;	
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+}
+#Date_install3
+{
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:black;
+}
+#app-detail6
+{
+margin-top:10%;
+}
+#Row2
+{
+height:30%;
+}
+
+}

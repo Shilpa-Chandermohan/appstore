@@ -1,0 +1,390 @@
+body{
+	max-width: 100%;
+	max-height: 100%;
+	background: url('../img/bg.jpg') ;
+	background-size:100% 100%;	
+	overflow-x:hidden;
+	overflow-y:hidden;
+	font: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+#formName{
+	
+	margin-left:3%;
+	}
+#line{
+	width:87%;
+	margin-left:3%;
+}
+#widget_mainSection
+{
+	width:40%;
+	height:40%;
+	margin-top:28%;
+	margin-left:32%;
+}
+#button_div{
+	width:70%;
+	height:40%;
+	}
+#name{
+	
+	margin-left:3%;
+	width:3%;
+}
+#userEmail{
+	width:40%;
+	height:8%;
+	margin-left:2%;
+	margin-top:0%;
+}
+
+#helpText
+{
+	width:90%;
+	height:30%;
+	margin-left:2%;
+	
+}
+
+#forgotSubmit{
+	width:21%;
+	height:20%;
+	margin-left:16%;
+	
+	}
+#forgotCancel{
+	width:21%;
+	height:20%;
+	
+	margin-left:0%;
+	
+	
+}
+
+/* popup css   */
+#closePopUp1{
+	
+	width:35%;
+	height: 32%;
+	left: 28%;
+	top: 10%;
+	//background:red;
+	background: url('../img/wecome_bg.png') no-repeat;
+	background-size:100% 100%;
+	position: absolute;
+	display: none;
+	z-index:6;
+	
+}
+
+.close_cont{
+	
+	width:70%;
+	height:70%;
+	margin-top:10%;
+	margin-left:14%;
+	position:relative;
+}
+#eMessage1{
+	width:100%;
+	height:50%;
+	text-align:center;
+}
+#gCancel1{
+	
+	width:60%;
+	height:25%;
+	margin-left:20%;
+} 
+
+/* ------------------------------------------------------- */
+/*second screen*/
+@media screen and (max-width: 1600px),screen and (max-height: 900px){
+.fonttitle {
+	font-size: 25px;
+}
+.fontbutton {
+	font-size: 18px;
+	font-weight:bold;
+	color:white;
+}
+
+.fontnormal {
+	font-size: 15px;
+}
+
+.fontlabel {
+	font-size: 18px;
+}
+.fontappdetail {
+	font-size: 17px;
+}
+}
+
+
+/*second screen*/
+@media screen and (max-width: 1280px),screen and (max-height: 1024px){
+.fonttitle {
+	font-size: 25px;
+}
+.fontbutton {
+	font-size: 18px;
+	font-weight:bold;
+	color:white;
+}
+
+.fontnormal {
+	font-size: 15px;
+}
+
+.fontlabel {
+	font-size: 18px;
+}
+.fontappdetail {
+	font-size: 17px;
+}
+}
+
+/*third screen*/
+@media screen and (max-width: 1280px),screen and (max-height: 800px){
+#widget_mainSection
+{
+	width:40%;
+	height:40%;
+	margin-top:22%;
+	margin-left:32%;
+}
+.fonttitle {
+	font-size: 20px;
+}
+.fontbutton {
+	font-size: 18px;
+	font-weight:bold;
+	color:white;
+}
+
+.fontnormal {
+	font-size: 15px;
+}
+
+.fontlabel {
+	font-size: 18px;
+}
+.fontappdetail {
+	font-size: 13px;
+}
+}
+
+/*fourth screen*/
+@media screen and (max-width: 1152px),screen and (max-height: 864px){
+#widget_mainSection
+{
+	width:40%;
+	height:40%;
+	margin-top:24%;
+	margin-left:32%;
+}
+#forgotSubmit{
+	width:20%;
+	height:20%;
+	background:url(../img/btn01_nor.png) no-repeat;
+	background-size:100% 100%;
+	margin-left:18%;
+	border:none;
+	
+}
+.fonttitle {
+	font-size: 20px;
+}
+.fontbutton {
+	font-size: 18px;
+	font-weight:bold;
+	color:white;
+}
+
+.fontnormal {
+	font-size: 15px;
+}
+
+.fontlabel {
+	font-size: 18px;
+}
+.fontappdetail {
+	font-size: 13px;
+}
+}
+
+/*fifth screen*/
+@media screen and (max-width: 1024px),screen and (max-height: 768px){
+#forgotSubmit{
+	width:21%;
+	height:20%;
+	background:url(../img/btn01_nor.png) no-repeat;
+	background-size:100% 100%;
+	margin-left:19%;
+	border:none;
+}
+.fonttitle {
+	font-size: 20px;
+}
+.fontbutton {
+	font-size: 18px;
+	font-weight:bold;
+	color:white;
+}
+
+.fontnormal {
+	font-size: 15px;
+}
+
+.fontlabel {
+	font-size: 18px;
+}
+.fontappdetail {
+	font-size: 13px;
+}
+}
+
+/*sixth screen*/
+@media screen and (max-width: 980px),screen and (max-height: 496px){
+#widget_mainSection
+{
+	width:40%;
+	height:40%;
+	margin-top:14%;
+	margin-left:33%;
+}
+#forgotSubmit{
+	width:21%;
+	height:20%;
+	background:url(../img/btn01_nor.png) no-repeat;
+	background-size:100% 100%;
+	margin-left:18%;
+	border:none;
+}
+.fonttitle {
+	font-size: 18px;
+}
+.fontbutton {
+	font-size: 16px;
+	font-weight:bold;
+	color:white;
+}
+
+.fontnormal {
+	font-size: 13px;
+}
+
+.fontlabel {
+	font-size: 16px;
+}
+.fontappdetail {
+	font-size: 12px;
+}
+}
+
+/*seventh screen*/
+@media screen and (max-width: 800px),screen and (max-height: 600px){
+#widget_mainSection
+{
+	width:45%;
+	height:40%;
+	margin-top:21%;
+	margin-left:30%;
+}
+#forgotSubmit{
+	width:21%;
+	height:20%;
+	background:url(../img/btn01_nor.png) no-repeat;
+	background-size:100% 100%;
+	margin-left:20%;
+	border:none;
+}
+.fonttitle {
+	font-size: 20px;
+}
+.fontbutton {
+	font-size: 16px;
+	font-weight:bold;
+	color:white;
+}
+
+.fontnormal {
+	font-size: 13px;
+}
+
+.fontlabel {
+	font-size: 16px;
+}
+.fontappdetail {
+	font-size: 12px;
+}
+}
+
+/*eighth screen*/
+@media screen and (max-width: 800px),screen and (max-height: 480px){
+#widget_mainSection
+{
+	width:45%;
+	height:40%;
+	margin-top:14%;
+	margin-left:30%;
+}
+.fonttitle {
+	font-size: 20px;
+}
+.fontbutton {
+	font-size: 16px;
+	font-weight:bold;
+	color:white;
+}
+
+.fontnormal {
+	font-size: 13px;
+}
+
+.fontlabel {
+	font-size: 16px;
+}
+.fontappdetail {
+	font-size: 12px;
+}
+}
+
+/*ninth screen*/
+@media screen and (max-width: 480px),screen and (max-height: 320px){
+#widget_mainSection
+{
+	width:85%;
+	height:40%;
+	margin-top:8%;
+	margin-left:12%;
+}
+#forgotSubmit{
+	width:21%;
+	height:20%;
+	background:url(../img/btn01_nor.png) no-repeat;
+	background-size:100% 100%;
+	margin-left:19%;
+	border:none;
+}
+.fonttitle {
+	font-size: 18px;
+}
+.fontbutton {
+	font-size: 16px;
+	font-weight:bold;
+	color:white;
+}
+
+.fontnormal {
+	font-size: 13px;
+}
+
+.fontlabel {
+	font-size: 16px;
+}
+.fontappdetail {
+	font-size: 12px;
+}
+}

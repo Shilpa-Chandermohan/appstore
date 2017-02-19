@@ -1,0 +1,338 @@
+/* === Remove input autofocus webkit === */
+*:focus {outline: none;} 
+/* === Form Typography === */
+  
+
+.contact_form p, .contact_form label {font-family:-webkit-pictograph, "Times New Roman", serif;}
+.form_hint, .form_hint1,.required_notification {font-size: 11px;}
+#passwordStrength
+{ 
+	position: absolute;
+	top:40%;
+	left:70%;
+}
+ 
+#regpage{
+	height:100%;
+	width:98%;
+	background: url('../img/bg.jpg');
+	background-size:100% 100%;
+}
+#passwordError,#moberror,#doberror,#fnameerror,#lnameerror,#emailerror
+{ 
+	position: absolute;
+	top:40%;
+	left:70%;
+	color:#FF0000;
+}
+#ssnerror,#cityError,#stateError,#anserror{
+    position: absolute;
+	top:40%;
+	left:70%;
+}
+#regerror{
+	margin-left:35%;
+	width: 80%;
+	color:#FF0000;
+}
+#sub_1{
+	margin-left:32.5%;
+	background: url('../img/btn01_nor.png') no-repeat; 
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	font-size:80%;
+	width:20%;
+    background-size:100% 100%;
+}
+#sub_2{ 
+	background: url('../img/btn01_nor.png') no-repeat; 
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	font-size:80%;
+	width:20%;
+    background-size:100% 100%;
+}
+
+/*Error popup css*/
+#closePopup{
+	
+	width:35%;
+	height: 35%;
+	left: 25%;
+	top: 10%;
+	background: url('../img/wecome_bg.png') no-repeat;
+	background-size:100% 100%;
+	position: absolute;
+	display: none;
+	
+	
+}
+
+#close_cont{
+	
+	width:70%;
+	height:70%;
+	margin-top:10%;
+	margin-left:14%;
+	position:relative;
+	
+}
+#e_message{
+	width:100%;
+	height:50%;
+	text-align:center;
+}
+#gcancel{
+	
+	width:60%;
+	height:25%;
+	margin-left:20%;
+}
+ 
+@media screen and (max-width: 480px),screen and (max-height: 600px){
+
+.contact_form p, .contact_form label {font-family:Georgia, Times, "Times New Roman", serif;font-size:2px;}
+.form_hint, .form_hint1,.required_notification {font-size: 4px;}
+#passwordStrength
+{
+
+position: absolute;
+	width:80%;
+	top:40%;
+	left:70%;
+}
+ 
+ 
+#passwordError
+{
+
+position: absolute;
+	top:10%;
+	left:85%;
+}
+}
+ 
+@media screen and (max-width: 800px),screen and (max-height: 480px){
+
+.contact_form p , .contact_form label {font-family:Georgia, Times, "Times New Roman", serif;}
+.form_hint, .form_hint1,.required_notification {font-size: 2px;}
+#passwordStrength
+{
+
+position: absolute;
+	top:10%;
+	left:85%;
+}
+#passwordError
+{
+
+position: absolute;
+	top:50%;
+	left:85%;
+}
+}
+ @media screen and (max-width: 400px),screen and (max-height: 400px){
+ 
+.contact_form p , .contact_form label {font-family:Georgia, Times, "Times New Roman", serif;}
+.form_hint, .form_hint1,.required_notification {font-size: 2px;}
+#passwordStrength
+{
+
+position: absolute;
+	top:5%;
+	left:100%;
+}
+#passwordError
+{
+
+position: absolute;
+	top:50%;
+	left:100%;
+}
+}
+
+@media screen and (max-width: 300px),screen and (max-height: 280px){
+
+.contact_form p , .contact_form label {font-family:Georgia, Times, "Times New Roman", serif;}
+.form_hint, .form_hint1,.required_notification {font-size: 2px;}
+#passwordStrength
+{
+
+position: absolute;
+	top:1%;
+	left:100%;
+}
+#passwordError
+{
+
+position: absolute;
+	top:60%;
+	left:100%;
+}
+}
+/*body {font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;}
+.contact_form h2, .contact_form label {font-family:Georgia, Times, "Times New Roman", serif;}
+.form_hint, .form_hint1,.required_notification {font-size: 11px;}*/
+
+/* === List Styles === */
+.contact_form ul {
+    width:60%;
+    list-style-type:none;
+	list-style-position:outside;
+	margin:0px;
+	padding:0px;
+	margin-left:0%
+    
+}
+.contact_form li{
+	padding:2%; 
+	border-bottom:1% solid #eee;
+	position:relative;
+} 
+.contact_form li:first-child, .contact_form li:last-child {
+	border-bottom:1% solid #777;
+}
+
+/* === Form Header === */
+.contact_form p {
+	margin:0;
+	display: inline;
+	font-size:200%;
+}
+.required_notification {
+	color:#d45252; 
+	margin:2% 0 0 0; 
+	display:inline;
+	float:right;
+	font-size:100%;
+}
+
+/* === Form Elements === */
+.contact_form label {
+	width:30%;
+	margin-top: 0%;
+	display:inline-block;
+	float:center;
+	padding:0%;
+	font-size:100%;
+}
+.contact_form input {
+	height:5%; 
+	width:30%; 
+	padding:1% 0.9%;
+
+}
+.contact_form textarea { width:31%; font-size:100%; }
+ 
+
+	/* form element visual styles */
+	.contact_form input, .contact_form textarea ,.contact_form option { 
+		border:1px solid #aaa;
+		box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+		border-radius:2px;
+		padding-right:30px;
+		-moz-transition: padding .25s; 
+		-webkit-transition: padding .25s; 
+		-o-transition: padding .25s;
+		transition: padding .25s;
+	} 
+ .contact_form textarea:focus{
+ border-color: #28921f;
+ box-shadow: 0 0 5px #5cd053;
+ }
+ .contact_form option:focus{ 
+ border-color: #28921f;
+ box-shadow: 0 0 5px #5cd053;
+ }
+/* === HTML5 validation styles === */	
+.contact_form input:required, .contact_form textarea:required {
+	background: #fff url(../img/red_asterisk.png) no-repeat 98% center;
+}
+.contact_form input:required:valid, .contact_form textarea:required:valid {
+	background: #fff url(../img/valid.png) no-repeat 98% center;
+	box-shadow: 0 0 5px #5cd053;
+	border-color: #28921f;
+}
+.contact_form input:focus:invalid, .contact_form textarea:focus:invalid {
+	background: #fff url(../img/invalid.png) no-repeat 98% center;
+	box-shadow: 0 0 5px #d45252;
+	border-color: #b03535
+}
+
+
+/* === Form hints === */
+.form_hint {
+	background: #d45252;
+	border-radius: 3px 3px 3px 3px;
+	color: white;
+	margin-left:9px;
+	padding: 1px 6px;
+	z-index: 999;  
+	position: absolute;  
+	display: none;
+} 
+.form_hint::before {
+	content: "\25C0";
+	color:#d45252;
+	position: absolute;
+	top:1px;
+	left:-6px;
+} 
+.contact_form input:focus + .form_hint {display: inline;}
+.contact_form input:required:valid + .form_hint {background: #28921f;}
+.contact_form input:required:valid + .form_hint::before {color:#28921f;} 
+/* === Button Style === */
+
+button.submit:hover {
+	opacity:.85;
+	cursor: pointer; 
+}
+button.submit:active {
+	border: 1px solid #20911e;
+	box-shadow: 0 0 10px 5px #356b0b inset; 
+	-webkit-box-shadow:0 0 10px 5px #356b0b inset ;
+	-moz-box-shadow: 0 0 10px 5px #356b0b inset;
+	-ms-box-shadow: 0 0 10px 5px #356b0b inset;
+	-o-box-shadow: 0 0 10px 5px #356b0b inset;
+	
+} 
+ #country { 
+  -webkit-appearance: button; 
+  -webkit-border-radius: 5px; 
+  -webkit-box-shadow: 5px 1px 3px rgba(0, 0, 0, 0.1); 
+  -webkit-padding-end: 20px;
+ 
+  -webkit-padding-start: 2px;
+ 
+  -webkit-user-select: none;
+ 
+  background-image: url(../img/select-arrow.png),
+ 
+    -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+ 
+  background-position: center right;
+ 
+  background-repeat: no-repeat;
+ 
+  border: 0px solid #FFF;
+ 
+  color: #555;
+ 
+  font-size: inherit;
+ 
+  margin: 0;
+ 
+  overflow: hidden;
+ 
+  padding-top: 5px;
+ 
+  padding-bottom: 5px;
+ 
+  text-overflow: ellipsis;
+ 
+  white-space: nowrap;
+  
+  }
+ 

@@ -1,0 +1,243 @@
+#login_body{
+	height:100%;
+	width:98%;
+	background: url('../img/bg.jpg');
+	background-size:100% 100%;
+}
+/* === Remove input autofocus webkit === */
+*:focus {outline: none;} 
+/* === Form Typography === */
+ @media screen and (max-width: 980px),screen and (max-height: 800px){
+body{
+ 
+ font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;}
+.contact_form p, .contact_form label {font-family:Georgia, Times, "Times New Roman", serif;}
+.form_hint, .form_hint1,.required_notification {font-size: 11px;}
+ #maincontent{height:100%;width:100%;margin-bottom:16%;}
+}
+ 
+@media screen and (max-width: 480px),screen and (max-height: 600px){
+body{
+ 
+ font: 10px/18px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;}
+.contact_form p, .contact_form label {font-family:Georgia, Times, "Times New Roman", serif;font-size:2px;}
+.form_hint, .form_hint1,.required_notification {font-size: 4px;}
+ 
+}
+ 
+@media screen and (max-width: 800px),screen and (max-height: 480px){
+body{
+ 
+ font: 10px/18px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;}
+.contact_form p , .contact_form label {font-family:Georgia, Times, "Times New Roman", serif;}
+.form_hint, .form_hint1,.required_notification {font-size: 2px;}
+ 
+}
+ @media screen and (max-width: 400px),screen and (max-height: 400px){
+ body{
+ 
+ font: 10px/18px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;}
+.contact_form p , .contact_form label {font-family:Georgia, Times, "Times New Roman", serif;}
+.form_hint, .form_hint1,.required_notification {font-size: 2px;}
+ 
+}
+
+@media screen and (max-width: 300px),screen and (max-height: 280px){
+ body{
+ 
+ font: 10px/18px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;}
+.contact_form p , .contact_form label {font-family:Georgia, Times, "Times New Roman", serif;}
+.form_hint, .form_hint1,.required_notification {font-size: 2px;}
+ 
+}
+/*body {font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;}
+.contact_form h2, .contact_form label {font-family:Georgia, Times, "Times New Roman", serif;}
+.form_hint, .form_hint1,.required_notification {font-size: 11px;}*/
+
+/* === List Styles === */
+.contact_form ul {
+    width:45%;
+    list-style-type:none;
+	list-style-position:outside;
+	margin:0px;
+	padding:0px;
+	margin-left:27%;
+	margin-top:10%
+    
+}
+/*Error popup css*/
+#closePopup{
+	
+	width:35%;
+	height: 35%;
+	left: 25%;
+	top: 10%;
+	background: url('../img/wecome_bg.png') no-repeat;
+	background-size:100% 100%;
+	position: absolute;
+	display: none;
+	
+	
+}
+
+#close_cont{
+	
+	width:70%;
+	height:70%;
+	margin-top:10%;
+	margin-left:14%;
+	position:relative;
+	
+}
+#e_message{
+	width:100%;
+	height:50%;
+	text-align:center;
+}
+#gcancel{
+	
+	width:60%;
+	height:25%;
+	margin-left:20%;
+}
+#checkBox{
+margin-left:0%;
+
+}
+.contact_form li{
+	padding:2%; 
+	border-bottom:1% solid #eee;
+	position:relative;
+	height:100%;
+	 
+} 
+.contact_form li:first-child, .contact_form li:last-child {
+	border-bottom:1% solid #777;
+}
+
+/* === Form Header === */
+.contact_form p {
+	margin:0;
+	display: inline;
+	font-size:200%;
+}
+.required_notification {
+	color:#d45252; 
+	margin:2% 0 0 0; 
+	display:inline;
+	float:right;
+	font-size:100%;
+}
+
+/* === Form Elements === */
+.contact_form label {
+	width:22%;
+	margin-top: 0%;
+	display:inline-block;
+	float:center;
+	padding:1%;
+	font-size:100%;
+} 
+#sub1_1,#reg1_1{
+margin-left:23%;
+}
+#sub1_2,#reg1_2{
+margin-left:5%;
+}
+#reg1_2{
+color:#373737; 
+}
+
+.contact_form textarea {padding:3%; width:30%; font-size:100%; }
+ 
+
+	/* form element visual styles */
+	 .contact_form input { 
+		border:1px solid #aaa; 
+		 
+	   font-size:100%;
+	    padding:1%;
+	   width:40%;
+	} 
+	#remember_1{
+	
+	margin-left:6.5%;
+	margin-top:1%;
+	}
+	#remember{
+	 margin-left:-17%;
+	  margin-top:-8%; 
+	}
+	.contact_form input:focus {
+		 
+	 
+		
+	}	 
+ .contact_form textarea:focus{
+  
+ }
+ .contact_form option:focus{ 
+  
+ }
+/* === HTML5 validation styles === */	 
+/* === Form hints === */
+.form_hint {
+	background: #d45252;
+	border-radius: 3px 3px 3px 3px;
+	color: white;
+	margin-left:8px;
+	padding: 1px 6px;
+	z-index: 999;  
+	position: absolute;  
+	display: none;
+} 
+.form_hint::before {
+	content: "\25C0";
+	color:#d45252;
+	position: absolute;
+	top:1px;
+	left:-6px;
+}
+#reg_2{
+height:10%;
+}
+#pwd,#email
+{
+ height:30%;
+ width:30%;
+
+}
+#login_error{ 
+margin-top:-5%;
+ margin-left:24%;
+ width:80%;
+ color:#FF0000;
+ font-size:20px;
+}
+
+button.submit {
+	background: url('../img/btn01_nor.png') no-repeat; 
+	color: black;
+	font-weight: bold;
+	padding: 1.3% ;
+	text-align: center;
+	font-size:85%;
+	width:30%;
+    background-size:100% 100%;
+}
+#lemailerror
+{
+	 
+    margin-left:80%;
+	color:#FF0000;
+}
+button.submit:hover {
+	opacity:.85;
+	cursor: pointer; 
+}
+	
+ 
+button.submit:hover {
+ 
+ }
+ 
